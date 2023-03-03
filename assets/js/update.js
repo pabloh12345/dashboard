@@ -114,7 +114,7 @@ let actualizaCambios = () =>{
 
       let message4 = `<p class="mb-0">
       <span class="text-sm ${clase_cambio(porcentaje_de_cambio(valor_actual4,valor_previo4))} font-weight-bolder"> 
-        ${porcentaje_de_cambio(valor_actual3,valor_previo4)} 
+        ${porcentaje_de_cambio(valor_actual4,valor_previo4)} 
       </span> ${mensaje_tiempo4} </p>`
 
 
