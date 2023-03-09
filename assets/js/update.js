@@ -91,7 +91,7 @@ let actualizaCambios = () =>{
       let { valor_previo: valor_previo3 , valor_actual: valor_actual3 , mensaje_tiempo: mensaje_tiempo3 } = cambio3;
       let { valor_previo: valor_previo4 , valor_actual: valor_actual4 , mensaje_tiempo: mensaje_tiempo4 } = cambio4;
 
-      let porcentaje_de_cambio = (valor_actual,valor_previo) => (valor_actual - valor_previo)*100/valor_previo 
+      let porcentaje_de_cambio = (valor_actual,valor_previo) => Math.round((valor_actual - valor_previo)*100/valor_previo) 
       let clase_cambio = (porcentaje) =>{
         let clase=porcentaje > 0 ? 'text-success' : 'text-danger';
         return clase;   
